@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/farol-favicon.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/negocios-v2.css" />
+    <title>Negócios</title>
+  </head>
+  <body>
+    <header>
+      <img src="../assets/logo.jpg" alt="Logo do site" />
+      <nav>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="negocios.html">Negócios</a></li>
+          <li><a href="profissionais.html">Profissionais</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="conteudo-principal">
+        <img
+          class="conteudo-principal__imagem"
+          src="../assets/Cópia de barra.png"
+          alt=""
+        />
+        <section class="pesquisa-area">
+          <input class="pesquisa-area__input" type="text" placeholder="Nome da empresa">
+          <select id="categorias" class="pesquisa-area__select">
+            <option value="">Selecione uma categoria</option>
+            <option value="hospedagem">Hospedagem</option>
+            <option value="casa_temporada">Casa Temporada</option>
+            <option value="restaurante/bar">Restaurante / Bar</option>
+            <option value="mercado/padaria">Mercado / Padaria</option>
+            <option value="comercios/lojas">Comercios / Lojas</option>
+            <option value="construcao_reforma">Construção e Reforma</option>
+          </select>
+          <button class="pesquisa-area__button" id="pesquisar">Pesquisar</button>
+        </section>
+        <section class="usuarios">
+          <section data-categoria="comercios/lojas" class="card">
+            <img src="../assets/veloso-rachel-logo.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Veloso & Rachel</p>
+              <p class="descricao">Imobiliária</p>
+              <p class="descricao">Av. Antônio Tavares, s/n - Praia dos Mariscos</p>
+              <p class="descricao">Tel: (83) 99108-1306</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.inovlarimoveis.com.br/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="hospedagem" class="card">
+            <img src="../assets/asenza-logo.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Asenza Beach Resort</p>
+              <p class="descricao">Hotel/Resort</p>
+              <p class="descricao">Reserva do Abiaí Barra do Abiaí · Faz. Cabeça s/n</p>
+              <p class="descricao">Tel: (83) 3041-8645</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://asenza.com.br/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="comercios/lojas" class="card">
+            <img src="../clientes/Passeios Pitimbu.png" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Passeios Pitimbu</p>
+              <p class="descricao">Passeios de barco e jangada na Paraíba</p>
+              <p class="descricao">Av. Beira Mar, 1400</p>
+              <p class="descricao">Tel: (62) 98122-1711 ou (83) 99983-5465</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/passeios_pitimbu/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="comercios/lojas" class="card">
+            <img src="../clientes/Passeios de Quadriciclo.png" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Passeios Praia Bela</p>
+              <p class="descricao">Passeios de Quadriciclos</p>
+              <p class="descricao">Av. Oceano Atlântico, 603 - Praia Bela </p>
+              <p class="descricao">Tel: (83) 98204-5494</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/passeiospraiabela/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="restaurante/bar" class="card">
+            <img src="../clientes/TepDesce.png" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Trep & Desce</p>
+              <p class="descricao">Restaurante</p>
+              <p class="descricao">Av. Bela Vista, 203 - Centro</p>
+              <p class="descricao">Tel: (83) 99315-4875</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/trep_desce/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="restaurante/bar" class="card">
+            <img src="../clientes/Brasil Hispano.png" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Assador Brasil Hispano</p>
+              <p class="descricao">Restaurante</p>
+              <p class="descricao">Av. Antônio Tavares - Praia dos Mariscos</p>
+              <p class="descricao">Tel: (61) 99688-6084</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/assadorbrasilhispano_/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="restaurante/bar" class="card">
+            <img src="../clientes/squina-mar.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Squina Mar</p>
+              <p class="descricao">Bar e Restaurante</p>
+              <p class="descricao">Av. Beira Mar, 6326 - Ponta de Coqueiro</p>
+              <p class="descricao">Tel: (83) 99161-2852</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/squinamarof/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="restaurante/bar" class="card">
+            <img src="../clientes/chalé-praiano.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Chalé Praiano</p>
+              <p class="descricao">Pizzaria e Atelier de Arte</p>
+              <p class="descricao">Av. Antônio Tavares - Praia dos Mariscos</p>
+              <p class="descricao">Tel: (61) 99688-6084</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/chalepraiano_/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="mercado/padaria" class="card">
+            <img src="../clientes/senhor-do-bonfim.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Padaria Senhor do Bonfim</p>
+              <p class="descricao">Padaria</p>
+              <p class="descricao">Rua PB 044, s/n - Centro</p>
+              <p class="descricao">Tel: (83) 98714-8520</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/padariasenhordobonfim/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="construcao_reforma" class="card">
+            <img src="../clientes/Cantinho da Construçao.png" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Cantinho da Construção</p>
+              <p class="descricao">Material de Construção</p>
+              <p class="descricao">Rua do Rio - Centro</p>
+              <p class="descricao">Tel: (83) 98633-4881</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/cantinho_construcao/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="construcao/reforma" class="card">
+            <img src="../clientes/JBC-serralharia.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">JBC Serralharia</p>
+              <p class="descricao">Serralharia</p>
+              <p class="descricao">Rua Bela Rosa - Acaú</p>
+              <p class="descricao">Tel: (83) 99837-5021 ou (83) 99960-2390</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/jbcserralharia/?igsh=MWNqNDR5OXpnd2VpOQ%3D%3D#"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="casa_temporada" class="card">
+            <img src="../clientes/Kasa da Falésia.png" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Kasa da Falésia</p>
+              <p class="descricao">Casamentos, Aniversários e Gravações</p>
+              <p class="descricao">Rua das Falésias - Praia Bela</p>
+              <p class="descricao">Tel: (83) 98715-6764</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/kasadafalesia/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="casa_temporada" class="card">
+            <img src="../clientes/Casa Caju.png" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Casa Cajú</p>
+              <p class="descricao">Casa de Praia</p>
+              <p class="descricao">Beira Mar - Av. Antônio Tavares, s/n, Cond. Adalgisa Cavalcanti - Praia Azul</p>
+              <p class="descricao">Tel: (81) 98865-2468</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/casacaju.praiaazul/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="casa_temporada" class="card">
+            <img src="../clientes/Pousada Aconchego.png" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Pousada Aconchego</p>
+              <p class="descricao">Pousada</p>
+              <p class="descricao">Rua Peixe Boi, 216 - Praia Bela</p>
+              <p class="descricao">Tel: (83) 99992-3879</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/pousadaaconchegopb/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="casa-temporada" class="card">
+            <img src="../clientes/casa-praia-azul.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Casa Praia Azul (Beira Mar)</p>
+              <p class="descricao">Casa de Veraneio para Aluguel (diárias/veraneio/eventos)</p>
+              <p class="descricao">Av. Antônio Tavares - Praia Azul</p>
+              <p class="descricao">Tel: (83) 98725-1219 </p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/casapraiaazul/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="casa_temporada" class="card">
+            <img src="../clientes/praia-azul-residence.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Casa Praia Azul Residence (Beira Mar)</p>
+              <p class="descricao">Casa de Veraneio para Aluguel</p>
+              <p class="descricao">Av. Antônio Tavares - Praia Azul</p>
+              <p class="descricao">Tel: (83) 99313-8191</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/praia_azul_residence/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="casa_temporada" class="card">
+            <img src="../clientes/casa-costa-do-marfim.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Casa Costa do Marlin (Beira Mar)</p>
+              <p class="descricao">Casa de praia, pé na areia - Aluguel Temporada</p>
+              <p class="descricao">Av. Antônio Tavares - Praia Azul</p>
+              <p class="descricao">Tel: (61) 98125-7474</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/casacostadomarlin/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="comercios/lojas" class="card">
+            <img src="../clientes/arataguy-roupas.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Arataguy</p>
+              <p class="descricao">Peças, acessórios e souveniers</p>
+              <p class="descricao">Rua  do Jangadeiro número 42 - Bairro Centro</p>
+              <p class="descricao">Tel: (83) 8835-7766</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/lojaarataguypitimbu/?igsh=MWlveDZ3OXJuaDU1NA%3D%3D#"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+           <section data-categoria="comercios/lojas" class="card">
+            <img src="../clientes/rogerio-artista.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Arataguy Artesanatos - Rogerio</p>
+              <p class="descricao">Artesanato</p>
+              <p class="descricao">Rua  do Jangadeiro número 42 - Bairro Centro</p>
+              <p class="descricao">Tel: (83) 8835-7766</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/rogeriogero210/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="comercios/lojas" class="card">
+            <img src="../clientes/marcas-e-modas.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Marcas e Modas</p>
+              <p class="descricao">Moda Masculina, Feminina e Infantil</p>
+              <p class="descricao">Rua Dr. João Gonçalves, 183 - Centro</p>
+              <p class="descricao">Tel: (83) 98677 2061</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/marcas_modas?igsh=MWQ1dXlyMWtxaGdkOA%3D%3D"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="comercios/lojas" class="card">
+            <img src="../clientes/barbearia-homem-moderno.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Barbearia Homem Moderno</p>
+              <p class="descricao">Barbeiro</p>
+              <p class="descricao">Rua Vereador João Quirino - Guarita</p>
+              <p class="descricao">Tel: (83) 98869-0063</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/hm__barbearia/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="comercios/lojas" class="card">
+            <img src="../clientes/farmacia-extra-popular.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Extra Popular Farma</p>
+              <p class="descricao">Farmácia</p>
+              <p class="descricao">Rua Dr. João Gonçalves, 426 - Centro</p>
+              <p class="descricao">Tel: (83) 98164-0439</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/extrapopularfarma/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="comercios/lojas" class="card">
+            <img src="../clientes/skynet.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Sky Net</p>
+              <p class="descricao">Provedor de Internet</p>
+              <p class="descricao">Rua PB 044, s/n - Centro</p>
+              <p class="descricao">Tel: (83) 98606-3678</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.facebook.com/p/SKY-NET-100063743280301/?locale=pt_BR"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="comercios/lojas" class="card">
+            <img src="../clientes/pitimbu-gas.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Pitimbu Gás</p>
+              <p class="descricao">Depósito de Água e Gás</p>
+              <p class="descricao">Rua Vereador José da silva Filho - Centro</p>
+              <p class="descricao">Tel: (83)98737-3730 ou (83) 98160-5601</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/pitimbugas/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="comercios/lojas" class="card">
+            <img src="../clientes/peixaria-do-chorao.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Peixaria do Chorão</p>
+              <p class="descricao">Peixaria</p>
+              <p class="descricao">R. Simões Barbosa - Centro</p>
+              <p class="descricao">Tel: (83) 98877-8553</p>
+              <a
+                class="link"
+                target="_blank"
+                href="https://www.instagram.com/peixariadochorao/"
+                >+ Informações</a
+              >
+            </div>
+          </section>
+          <section data-categoria="comercios/lojas" class="card">
+            <img src="../assets/negocios-locais.jpg" alt="" />
+            <div class="card-informacao">
+              <p class="nome">Cartório de Pitimbu</p>
+              <p class="descricao">Registro Civil e Tabelionato de Notas</p>
+              <p class="descricao">Rua João Bpo., 60 - Centro</p>
+              <p class="descricao">Tel: (83) 99153-8831</p>
+            </div>
+          </section>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section class="incentivadores">
+        <h2 class="incentivadores__titulo">Patrocinador</h2>
+        <section class="incentivadores__conteudo">
+          <img
+            class="incentivadores__imagem"
+            src="../assets/asenza-logo.jpg"
+            alt="Logo do asenza"
+          />
+          <ul class="incentivadores__lista">
+            <li class="incentivadores__lista-item">
+              <a
+                class="incentivadores__lista-item__link"
+                target="_blank"
+                href="https://www.instagram.com/asenzaoficial/"
+                ><img
+                  class="incentivadores__lista-item__imagem"
+                  src="../assets/instagram-icon.png"
+                  alt="Ícone do Instagram"
+                />asenzaoficial</a
+              >
+            </li>
+            <li class="incentivadores__lista-item">
+              <a
+                class="incentivadores__lista-item__link"
+                target="_blank"
+                href="https://asenza.com.br/"
+                ><img
+                  class="incentivadores__lista-item__imagem"
+                  src="../assets/internet-icon.png"
+                  alt="Íconde de site"
+                />asenza.com.br</a
+              >
+            </li>
+            <li class="incentivadores__lista-item">
+              <a
+                class="incentivadores__lista-item__link"
+                target="_blank"
+                href="https://www.linkedin.com/company/asenza-beach-resort/?originalSubdomain=br"
+                ><img
+                  class="incentivadores__lista-item__imagem"
+                  src="../assets/linkedin-icon.png"
+                  alt="Ícone do Linkedin"
+                />asenza-beach-resort</a
+              >
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="incentivadores">
+        <h2 class="incentivadores__titulo">Apoio</h2>
+        <section class="incentivadores__conteudo">
+          <img
+            class="incentivadores__imagem"
+            src="../assets/veloso-rachel-logo.jpg"
+            alt="Logo do asenza"
+          />
+          <ul class="incentivadores__lista">
+            <li class="incentivadores__lista-item">
+              <a
+                class="incentivadores__lista-item__link"
+                target="_blank"
+                href="https://www.instagram.com/rachel_corretoradeimoveis/"
+                ><img
+                  class="incentivadores__lista-item__imagem"
+                  src="../assets/instagram-icon.png"
+                  alt="Ícone do Instagram"
+                />rachel_corretoradeimoveis</a
+              >
+            </li>
+            <li class="incentivadores__lista-item">
+              <a
+                class="incentivadores__lista-item__link"
+                target="_blank"
+                href="https://www.inovlarimoveis.com.br/"
+                ><img
+                  class="incentivadores__lista-item__imagem"
+                  src="../assets/internet-icon.png"
+                  alt="Íconde de site"
+                />InovlarImóveis</a
+              >
+            </li>
+            <li class="incentivadores__lista-item">
+              <a
+                class="incentivadores__lista-item__link"
+                target="_blank"
+                href="https://www.linkedin.com/in/rachel-marques-57b2163b/"
+                ><img
+                  class="incentivadores__lista-item__imagem"
+                  src="../assets/linkedin-icon.png"
+                  alt="Ícone do Linkedin"
+                />rachel-marques</a
+              >
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="redes">
+        <h2 class="redes__titulo">Nossas Redes</h2>
+        <div>
+          <a class="redes__link" target="_blank" href="https://www.instagram.com/farolpitimbupb/"><img class="redes__imagem" src="../assets/Instagram.png" alt=""></a>
+          <a class="redes__link" target="_blank" href="https://www.tiktok.com/@farolpitimbu?_t=ZM-8wjVecP5xk0&_r=1"><img class="redes__imagem" src="../assets/Tiktok.png" alt=""></a>
+        </div>
+      </section>
+    </footer>
+    <p class="direitos">
+      &copy; Todos os direitos reservados - Farol Pitimbu 2025
+    </p>
+    <script src="../scripts/negocios.js"></script>
+  </body>
+</html>
