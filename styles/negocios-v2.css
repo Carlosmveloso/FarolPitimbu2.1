@@ -96,7 +96,7 @@ main {
   color: var(--cor-azul);
   font-family: "Montserrat";
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   padding: 10px;
 }
 
@@ -112,10 +112,23 @@ main {
   margin-right: 10px;
   font-size: 16px;
   font-family: 'Montserrat';
+  color: var(--cor-azul);
+  font-weight: 500;
   border-top: 2px solid var(--cor-verde);
   border-left: 2px solid var(--cor-verde);
   border-bottom: 1px solid var(--cor-verde);
   border-right: 1px solid var(--cor-verde);
+}
+
+.pesquisa-area__select:hover {
+  cursor: pointer;
+}
+
+.pesquisa-area__select__option {
+  color: var(--cor-azul);
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  background-color: #f5f5f5;
 }
 
 .pesquisa-area__button {
@@ -125,7 +138,6 @@ main {
   background-color: var(--cor-verde);
   border: none;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.447);
   font-family: "Montserrat";
   font-weight: 700;
   color: var(--cor-azul);
@@ -133,6 +145,7 @@ main {
 
 .pesquisa-area__button:hover {
   background-color: #a0eb44;
+  cursor: pointer;
 }
 
 .usuarios {
@@ -283,6 +296,14 @@ footer {
   text-align: center;
   color: var(--cor-verde);
   padding-top: 10px;
+}
+
+.mostrar {
+  display: block;
+}
+
+.esconder {
+  display: none;
 }
 
 @media (max-width: 480px) {
