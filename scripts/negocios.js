@@ -1,22 +1,35 @@
+const inputPesquisa = document.querySelector(".pesquisa-area__input");
+const selectCategoria = document.getElementById("categorias");
 const btnFiltrar = document.getElementById("pesquisar");
+const clientes = document.querySelectorAll(".card");
 
-btnFiltrar.addEventListener("click", filtrar);
+let filtroCategoriaAtual = ""; // Guarda a categoria selecionada no clique do botão
 
-function filtrar() {
-  const categoriaSelecionada = document.getElementById("categorias").value;
-  const clientes = document.querySelectorAll(".card");
+// Pesquisa em tempo real só pelo nome
+inputPesquisa.addEventListener("input", () => {
+  filtrar(inputPesquisa.value.toLowerCase().trim(), filtroCategoriaAtual);
+});
 
-  clientes.forEach(function (cliente) {
+// Filtra categoria só ao clicar no botão
+btnFiltrar.addEventListener("click", () => {
+  filtroCategoriaAtual = selectCategoria.value;
+  filtrar(inputPesquisa.value.toLowerCase().trim(), filtroCategoriaAtual);
+});
+
+// Função de filtro combinada, recebe texto e categoria atuais
+function filtrar(textoDigitado, categoriaSelecionada) {
+  clientes.forEach((cliente) => {
+    const nomeEmpresa = cliente.querySelector(".nome").textContent.toLowerCase();
     const categoriaCliente = cliente.dataset.categoria;
 
-    const mostrarCliente =
-      categoriaSelecionada === "" ||
-      categoriaCliente === categoriaSelecionada;
+    const correspondeNome = nomeEmpresa.includes(textoDigitado);
+    const correspondeCategoria =
+      categoriaSelecionada === "" || categoriaCliente === categoriaSelecionada;
 
-    if (mostrarCliente) {
-      cliente.style.display = "flex"; // Mostra os que passaram no filtro
+    if (correspondeNome && correspondeCategoria) {
+      cliente.style.display = "flex";
     } else {
-      cliente.style.display = "none"; // Esconde os que não passaram
+      cliente.style.display = "none";
     }
   });
 }
