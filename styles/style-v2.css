@@ -57,11 +57,43 @@ main {
   width: 100%;
 }
 
+.inicio {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabua-de-mares {
+  order: 1;
+}
+
+.tabua-de-mares img {
+  max-height: 500px;
+  border-radius: 15px;
+}
+
+.tabua-de-mares img:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.264);
+}
+
 .imagem__da__praia {
   width: 60%;
   max-height: 500px;
   margin: 50px 40px;
   border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.264);
+  order: 2;
+}
+
+.numero-importantes {
+  max-height: 500px;
+  border-radius: 15px;
+  order: 3;
+}
+
+.numero-importantes:hover {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.264);
 }
 
@@ -226,7 +258,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-
   header img {
     max-width: 100%;
   }
@@ -235,11 +266,25 @@ footer {
     margin: 5px;
   }
 
+  .inicio {
+    flex-flow: row wrap;
+    gap: 10px;
+  }
+
+  .tabua-de-mares {
+    order: 2;
+  }
+
   .imagem__da__praia {
     width: 100%;
     margin: 0px;
     padding: 10px;
     border-radius: 20px;
+    order: 1;
+  }
+
+  .numeros-importantes {
+    order: 3;
   }
 
   .span-verde {
@@ -250,7 +295,7 @@ footer {
     font-size: 18px;
   }
 
-  .span-azul{
+  .span-azul {
     font-size: 24px;
   }
 
@@ -274,10 +319,7 @@ footer {
     align-items: center;
   }
 
-
   .incentivadores__lista-item__link {
     font-size: 16px;
   }
-
-  
 }

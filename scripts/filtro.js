@@ -22,9 +22,12 @@ function filtrar(textoDigitado, categoriaSelecionada) {
     const nomeEmpresa = cliente.querySelector(".nome").textContent.toLowerCase();
     const categoriaCliente = cliente.dataset.categoria;
 
+    // Divide em categorias e remove espaços extras
+    const categorias = categoriaCliente.split(",").map(cat => cat.trim());
+
     const correspondeNome = nomeEmpresa.includes(textoDigitado);
     const correspondeCategoria =
-      categoriaSelecionada === "" || categoriaCliente === categoriaSelecionada;
+      categoriaSelecionada === "" || categorias.includes(categoriaSelecionada);
 
     if (correspondeNome && correspondeCategoria) {
       cliente.style.display = "flex";
@@ -33,3 +36,4 @@ function filtrar(textoDigitado, categoriaSelecionada) {
     }
   });
 }
+
