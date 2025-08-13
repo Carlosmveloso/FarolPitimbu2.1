@@ -118,6 +118,7 @@ main {
   border-left: 2px solid var(--cor-verde);
   border-bottom: 1px solid var(--cor-verde);
   border-right: 1px solid var(--cor-verde);
+  border-radius: 5px;
 }
 
 .pesquisa-area__select:hover {
