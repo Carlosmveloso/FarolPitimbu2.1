@@ -78,13 +78,12 @@ main {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.264);
 }
 
-.imagem__da__praia {
+.carrossel {
   width: 60%;
+}
+
+.banner {
   max-height: 500px;
-  margin: 50px 40px;
-  border-radius: 15px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.264);
-  order: 2;
 }
 
 .numero-importantes {
@@ -273,6 +272,10 @@ footer {
 
   .tabua-de-mares {
     order: 2;
+  }
+
+  .carrossel {
+    width: 90%;
   }
 
   .imagem__da__praia {
