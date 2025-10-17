@@ -1,310 +1,294 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../assets/farol-favicon.jpg"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="../styles/reset.css" />
-    <link rel="stylesheet" href="../styles/negocios-v2.1.css" />
-    <title>Negócios</title>
-  </head>
-  <body>
-    <header>
-      <img src="../assets/logo.jpg" alt="Logo do site" />
-      <nav>
-        <ul>
-          <li><a href="../index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="negocios.html">Negócios</a></li>
-          <li><a href="profissionais.html">Profissionais</a></li>
-          <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="contato.html">Contato</a></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/farol-favicon.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="../styles/reset.css" />
+  <link rel="stylesheet" href="../styles/negocios-v2.1.css" />
+  <title>Negócios</title>
+</head>
+
+<body>
+  <header>
+    <img src="../assets/logo.jpg" alt="Logo do site" />
+    <nav>
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="negocios.html">Negócios</a></li>
+        <li><a href="profissionais.html">Profissionais</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="conteudo-principal">
+      <img class="conteudo-principal__imagem" src="../assets/capa-servicos.jpg" alt="" />
+      <section class="pesquisa-area">
+        <input class="pesquisa-area__input" type="text" placeholder="Nome da empresa">
+        <select id="categorias" class="pesquisa-area__select">
+          <option class="pesquisa-area__select__option" value="">Selecione uma categoria</option>
+          <option class="pesquisa-area__select__option" value="artesanato">Artesanato</option>
+          <option class="pesquisa-area__select__option" value="manutencao_recidencial">Manutenção Residencial</option>
+          <option class="pesquisa-area__select__option" value="comercio_loja">Comercio / Loja</option>
+          <option class="pesquisa-area__select__option" value="alimentacao_bebidas">Alimentação / Bebidas</option>
+          <option class="pesquisa-area__select__option" value="turismo_experiencia">Turismo / Experiência</option>
+          <option class="pesquisa-area__select__option" value="eventos">Eventos</option>
+          <option class="pesquisa-area__select__option" value="outros">Outros</option>
+        </select>
+        <button class="pesquisa-area__button" id="pesquisar">Pesquisar</button>
+      </section>
+      <section class="usuarios">
+        <section data-categoria="artesanato" class="card">
+          <img src="../clientes-servicos/eliane.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Eliane - Trançado de Pitimbu</p>
+            <p class="descricao">Artesã</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583996001623?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 99600-1623</a></p>
+          </div>
+        </section>
+        <section data-categoria="artesanato" class="card">
+          <img src="../clientes-servicos/Edjane.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Edjane - Trançados</p>
+            <p class="descricao">Artesã</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583988565705?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 98856-5705</a></p>
+          </div>
+        </section>
+        <section data-categoria="artesanato" class="card">
+          <img src="../clientes-servicos/marisqueiras-de-acau.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Marisqueiras de Acaú</p>
+            <p class="descricao">Artesanato e Gastronomia</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/558399069247?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 9906-9247 ou (83) 99647-2897</a></p>
+          </div>
+        </section>
+        <section data-categoria="manutencao_recidencial" class="card">
+          <img src="../clientes-servicos/ademir-mendes-manutencao-eletrica.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Ademir Mendes</p>
+            <p class="descricao">Elétrica, Pintor, Alvenaria</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583981029149?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 98102-9149</a></p>
+          </div>
+        </section>
+        <section data-categoria="outros" class="card">
+          <img src="../clientes-servicos/ademir-mendes-professor-musica.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Ademir Mendes</p>
+            <p class="descricao">Aula de música</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583981029149?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 98102-9149</a></p>
+          </div>
+        </section>
+        <section data-categoria="alimentacao_bebidas" class="card">
+          <img src="../clientes-servicos/edna-lanches.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Edna</p>
+            <p class="descricao">Edna Lanches</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5581996527321?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (81) 99652-7321</a></p>
+          </div>
+        </section>
+        <section data-categoria="alimentacao_bebidas" class="card">
+          <img src="../clientes-servicos/fitness-food.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Fitness Food</p>
+            <p class="descricao">Lanches Naturais c/Delivery</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583998547567?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 99854-7567</a></p>
+          </div>
+        </section>
+        <section data-categoria="alimentacao_bebidas" class="card">
+          <img src="../clientes-servicos/tiago-pastelaria.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Tiago</p>
+            <p class="descricao">Pastelaria e Caldo de Cana</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583981659204?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 98165-9204</a></p>
+          </div>
+        </section>
+        <section data-categoria="turismo_experiencia" class="card">
+          <img src="../clientes-servicos/passeios-acau-beach.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Passeios Acaú Beach</p>
+            <p class="descricao">Passeios em Acaú e Pitimbu</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5581999766794?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (81) 99976-6794</a></p>
+          </div>
+        </section>
+        <section data-categoria="turismo_experiencia" class="card">
+          <img src="../clientes-servicos/transporte-aquatico.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Transporte Aquático</p>
+            <p class="descricao">Travessia Acaú-PB à Carne de Vaca - PE</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5581997144689?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (81) 99714-4689</a></p>
+          </div>
+        </section>
+        <section data-categoria="turismo_experiencia" class="card">
+          <img src="../clientes-servicos/miqueias-servicos.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Miqueias</p>
+            <p class="descricao">Guia de Turismo</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583981018667?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 98101-8667</a></p>
+          </div>
+        </section>
+        <section data-categoria="turismo_experiencia" class="card">
+          <img src="../clientes-servicos/joao-passeios-de-barco.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">João</p>
+            <p class="descricao">Passeios de barco</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583991813295?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 99181-3295</a></p>
+          </div>
+        </section>
+        <section data-categoria="eventos" class="card">
+          <img src="../clientes-servicos/cake-designer.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">CakeDesigner - Tereu Ribeiro</p>
+            <p class="descricao">Bolos e gêneros alimentícios</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583999836465?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 99983-6465</a></p>
+          </div>
+        </section>
+        <section data-categoria="eventos" class="card">
+          <img src="../clientes-servicos/zel-sonhos-criativos.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Zel Sonhos Criativos</p>
+            <p class="descricao">Personalizados</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583996285067?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 99628-5067</a></p>
+          </div>
+        </section>
+        <section data-categoria="comercio_loja" class="card">
+          <img src="../clientes-servicos/coelho pesca acau.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Coelho Pesca Acaú</p>
+            <p class="descricao">Venda de materiais para pesca esportiva e profissional</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583996531065?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 99653-1065</a></p>
+          </div>
+        </section>
+        <section data-categoria="outros" class="card">
+          <img src="../clientes-servicos/servicos.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Ubirajara</p>
+            <p class="descricao">Fornecedor de Caranguejo</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583996289391?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 99628-9391</a></p>
+          </div>
+        </section>
+        <section data-categoria="outros" class="card">
+          <img src="../clientes-servicos/servicos.jpg" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Neto</p>
+            <p class="descricao">Manutenção, instalação e concerto de ar-condicionado</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583996289391?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 99847-4265</a></p>
+          </div>
+        </section>
+        <section data-categoria="alimentacao_bebidas" class="card">
+          <img src="../clientes-servicos/green & white.png" alt="" />
+          <div class="card-informacao">
+            <p class="nome">Poupa de Frutas Du'Carlos</p>
+            <p class="descricao">100% Natural e sem conservantes</p>
+            <p class="descricao"><a class="link"
+                href="http://wa.me/5583996916944?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos."
+                target="_blank">Tel: (83) 99691-6944</a></p>
+          </div>
+        </section>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <section class="incentivadores">
+      <h2 class="incentivadores__titulo">Patrocinador</h2>
+      <section class="incentivadores__conteudo">
+        <img class="incentivadores__imagem" src="../assets/asenza-logo.jpg" alt="Logo do asenza" />
+        <ul class="incentivadores__lista">
+          <li class="incentivadores__lista-item">
+            <a class="incentivadores__lista-item__link" target="_blank"
+              href="https://www.instagram.com/asenzaoficial/"><img class="incentivadores__lista-item__imagem"
+                src="../assets/instagram-icon.png" alt="Ícone do Instagram" />asenzaoficial</a>
+          </li>
+          <li class="incentivadores__lista-item">
+            <a class="incentivadores__lista-item__link" target="_blank" href="https://asenza.com.br/"><img
+                class="incentivadores__lista-item__imagem" src="../assets/internet-icon.png"
+                alt="Íconde de site" />asenza.com.br</a>
+          </li>
+          <li class="incentivadores__lista-item">
+            <a class="incentivadores__lista-item__link" target="_blank"
+              href="https://www.linkedin.com/company/asenza-beach-resort/?originalSubdomain=br"><img
+                class="incentivadores__lista-item__imagem" src="../assets/linkedin-icon.png"
+                alt="Ícone do Linkedin" />asenza-beach-resort</a>
+          </li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="conteudo-principal">
-        <img
-          class="conteudo-principal__imagem"
-          src="../assets/capa-servicos.jpg"
-          alt=""
-        />
-        <section class="pesquisa-area">
-          <input class="pesquisa-area__input" type="text" placeholder="Nome da empresa">
-          <select id="categorias" class="pesquisa-area__select">
-            <option class="pesquisa-area__select__option" value="">Selecione uma categoria</option>
-            <option class="pesquisa-area__select__option" value="artesanato">Artesanato</option>
-            <option class="pesquisa-area__select__option" value="manutencao_recidencial">Manutenção Residencial</option>
-            <option class="pesquisa-area__select__option" value="comercio_loja">Comercio / Loja</option>
-            <option class="pesquisa-area__select__option" value="alimentacao_bebidas">Alimentação / Bebidas</option>
-            <option class="pesquisa-area__select__option" value="turismo_experiencia">Turismo / Experiência</option>
-            <option class="pesquisa-area__select__option" value="eventos">Eventos</option>
-            <option class="pesquisa-area__select__option" value="outros">Outros</option>
-          </select>
-          <button class="pesquisa-area__button" id="pesquisar">Pesquisar</button>
-        </section>
-        <section class="usuarios">
-          <section data-categoria="artesanato" class="card">
-            <img src="../clientes-servicos/eliane.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Eliane - Trançado de Pitimbu</p>
-              <p class="descricao">Artesã</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5583996001623?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 99600-1623</a></p>
-            </div>
-          </section>
-          <section data-categoria="artesanato" class="card">
-            <img src="../clientes-servicos/Edjane.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Edjane - Trançados</p>
-              <p class="descricao">Artesã</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5583988565705?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 98856-5705</a></p>
-            </div>
-          </section>
-          <section data-categoria="artesanato" class="card">
-            <img src="../clientes-servicos/marisqueiras-de-acau.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Marisqueiras de Acaú</p>
-              <p class="descricao">Artesanato e Gastronomia</p>
-              <p class="descricao"><a class="link" href="http://wa.me/558399069247?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 9906-9247 ou (83) 99647-2897</a></p>
-            </div>
-          </section>
-          <section data-categoria="manutencao_recidencial" class="card">
-            <img src="../clientes-servicos/ademir-mendes-manutencao-eletrica.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Ademir Mendes</p>
-              <p class="descricao">Elétrica, Pintor, Alvenaria</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5583981029149?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 98102-9149</a></p>
-            </div>
-          </section>
-          <section data-categoria="outros" class="card">
-            <img src="../clientes-servicos/ademir-mendes-professor-musica.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Ademir Mendes</p>
-              <p class="descricao">Aula de música</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5583981029149?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 98102-9149</a></p>
-            </div>
-          </section>
-          <section data-categoria="alimentacao_bebidas" class="card">
-            <img src="../clientes-servicos/edna-lanches.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Edna</p>
-              <p class="descricao">Edna Lanches</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5581996527321?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (81) 99652-7321</a></p>
-            </div>
-          </section>
-          <section data-categoria="alimentacao_bebidas" class="card">
-            <img src="../clientes-servicos/fitness-food.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Fitness Food</p>
-              <p class="descricao">Lanches Naturais c/Delivery</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5583998547567?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 99854-7567</a></p>
-            </div>
-          </section>
-          <section data-categoria="alimentacao_bebidas" class="card">
-            <img src="../clientes-servicos/tiago-pastelaria.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Tiago</p>
-              <p class="descricao">Pastelaria e Caldo de Cana</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5583981659204?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 98165-9204</a></p>
-            </div>
-          </section>
-          <section data-categoria="turismo_experiencia" class="card">
-            <img src="../clientes-servicos/passeios-acau-beach.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Passeios Acaú Beach</p>
-              <p class="descricao">Passeios em Acaú e Pitimbu</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5581999766794?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (81) 99976-6794</a></p>
-            </div>
-          </section>
-          <section data-categoria="turismo_experiencia" class="card">
-            <img src="../clientes-servicos/transporte-aquatico.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Transporte Aquático</p>
-              <p class="descricao">Travessia Acaú-PB à Carne de Vaca - PE</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5581997144689?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (81) 99714-4689</a></p>
-            </div>
-          </section>
-          <section data-categoria="turismo_experiencia" class="card">
-            <img src="../clientes-servicos/miqueias-servicos.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Miqueias</p>
-              <p class="descricao">Guia de Turismo</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5583981018667?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 98101-8667</a></p>
-            </div>
-          </section>
-          <section data-categoria="turismo_experiencia" class="card">
-            <img src="../clientes-servicos/joao-passeios-de-barco.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">João</p>
-              <p class="descricao">Passeios de barco</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5583991813295?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 99181-3295</a></p>
-            </div>
-          </section>
-          <section data-categoria="eventos" class="card">
-            <img src="../clientes-servicos/cake-designer.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">CakeDesigner - Tereu Ribeiro</p>
-              <p class="descricao">Bolos e gêneros alimentícios</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5583999836465?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 99983-6465</a></p>
-            </div>
-          </section>
-          <section data-categoria="eventos" class="card">
-            <img src="../clientes-servicos/zel-sonhos-criativos.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Zel Sonhos Criativos</p>
-              <p class="descricao">Personalizados</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5583996285067?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 99628-5067</a></p>
-            </div>
-          </section>
-          <section data-categoria="comercio_loja" class="card">
-            <img src="../clientes-servicos/coelho pesca acau.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Coelho Pesca Acaú</p>
-              <p class="descricao">Venda de materiais para pesca esportiva e profissional</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5583996531065?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 99653-1065</a></p>
-            </div>
-          </section>
-          <section data-categoria="outros" class="card">
-            <img src="../clientes-servicos/servicos.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Ubirajara</p>
-              <p class="descricao">Fornecedor de Caranguejo</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5583996289391?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 99628-9391</a></p>
-            </div>
-          </section>
-          <section data-categoria="outros" class="card">
-            <img src="../clientes-servicos/servicos.jpg" alt="" />
-            <div class="card-informacao">
-              <p class="nome">Neto</p>
-              <p class="descricao">Manutenção, instalação e concerto de ar-condicionado</p>
-              <p class="descricao"><a class="link" href="http://wa.me/5583996289391?text=Olá! Encontrei seu contato pelo Farol Pitimbu e gostaria de mais informações sobre seus serviços/produtos." target="_blank">Tel: (83) 99847-4265</a></p>
-            </div>
-          </section>
-        </section>
       </section>
-    </main>
-    <footer>
-      <section class="incentivadores">
-        <h2 class="incentivadores__titulo">Patrocinador</h2>
-        <section class="incentivadores__conteudo">
-          <img
-            class="incentivadores__imagem"
-            src="../assets/asenza-logo.jpg"
-            alt="Logo do asenza"
-          />
-          <ul class="incentivadores__lista">
-            <li class="incentivadores__lista-item">
-              <a
-                class="incentivadores__lista-item__link"
-                target="_blank"
-                href="https://www.instagram.com/asenzaoficial/"
-                ><img
-                  class="incentivadores__lista-item__imagem"
-                  src="../assets/instagram-icon.png"
-                  alt="Ícone do Instagram"
-                />asenzaoficial</a
-              >
-            </li>
-            <li class="incentivadores__lista-item">
-              <a
-                class="incentivadores__lista-item__link"
-                target="_blank"
-                href="https://asenza.com.br/"
-                ><img
-                  class="incentivadores__lista-item__imagem"
-                  src="../assets/internet-icon.png"
-                  alt="Íconde de site"
-                />asenza.com.br</a
-              >
-            </li>
-            <li class="incentivadores__lista-item">
-              <a
-                class="incentivadores__lista-item__link"
-                target="_blank"
-                href="https://www.linkedin.com/company/asenza-beach-resort/?originalSubdomain=br"
-                ><img
-                  class="incentivadores__lista-item__imagem"
-                  src="../assets/linkedin-icon.png"
-                  alt="Ícone do Linkedin"
-                />asenza-beach-resort</a
-              >
-            </li>
-          </ul>
-        </section>
+    </section>
+    <section class="incentivadores">
+      <h2 class="incentivadores__titulo">Apoio</h2>
+      <section class="incentivadores__conteudo">
+        <img class="incentivadores__imagem" src="../assets/veloso-rachel-logo.jpg" alt="Logo do asenza" />
+        <ul class="incentivadores__lista">
+          <li class="incentivadores__lista-item">
+            <a class="incentivadores__lista-item__link" target="_blank"
+              href="https://www.instagram.com/rachel_corretoradeimoveis/"><img
+                class="incentivadores__lista-item__imagem" src="../assets/instagram-icon.png"
+                alt="Ícone do Instagram" />rachel_corretoradeimoveis</a>
+          </li>
+          <li class="incentivadores__lista-item">
+            <a class="incentivadores__lista-item__link" target="_blank" href="https://www.inovlarimoveis.com.br/"><img
+                class="incentivadores__lista-item__imagem" src="../assets/internet-icon.png"
+                alt="Íconde de site" />InovlarImóveis</a>
+          </li>
+          <li class="incentivadores__lista-item">
+            <a class="incentivadores__lista-item__link" target="_blank"
+              href="https://www.linkedin.com/in/rachel-marques-57b2163b/"><img
+                class="incentivadores__lista-item__imagem" src="../assets/linkedin-icon.png"
+                alt="Ícone do Linkedin" />rachel-marques</a>
+          </li>
+        </ul>
       </section>
-      <section class="incentivadores">
-        <h2 class="incentivadores__titulo">Apoio</h2>
-        <section class="incentivadores__conteudo">
-          <img
-            class="incentivadores__imagem"
-            src="../assets/veloso-rachel-logo.jpg"
-            alt="Logo do asenza"
-          />
-          <ul class="incentivadores__lista">
-            <li class="incentivadores__lista-item">
-              <a
-                class="incentivadores__lista-item__link"
-                target="_blank"
-                href="https://www.instagram.com/rachel_corretoradeimoveis/"
-                ><img
-                  class="incentivadores__lista-item__imagem"
-                  src="../assets/instagram-icon.png"
-                  alt="Ícone do Instagram"
-                />rachel_corretoradeimoveis</a
-              >
-            </li>
-            <li class="incentivadores__lista-item">
-              <a
-                class="incentivadores__lista-item__link"
-                target="_blank"
-                href="https://www.inovlarimoveis.com.br/"
-                ><img
-                  class="incentivadores__lista-item__imagem"
-                  src="../assets/internet-icon.png"
-                  alt="Íconde de site"
-                />InovlarImóveis</a
-              >
-            </li>
-            <li class="incentivadores__lista-item">
-              <a
-                class="incentivadores__lista-item__link"
-                target="_blank"
-                href="https://www.linkedin.com/in/rachel-marques-57b2163b/"
-                ><img
-                  class="incentivadores__lista-item__imagem"
-                  src="../assets/linkedin-icon.png"
-                  alt="Ícone do Linkedin"
-                />rachel-marques</a
-              >
-            </li>
-          </ul>
-        </section>
-      </section>
-      <section class="redes">
-        <h2 class="redes__titulo">Nossas Redes</h2>
-        <div>
-          <a
-            class="redes__link"
-            target="_blank"
-            href="https://www.instagram.com/farolpitimbupb/"
-            ><img class="redes__imagem" src="../assets/Instagram.png" alt=""
-          /></a>
-          <a
-            class="redes__link"
-            target="_blank"
-            href="https://www.tiktok.com/@farolpitimbu?_t=ZM-8wjVecP5xk0&_r=1"
-            ><img class="redes__imagem" src="../assets/Tiktok.png" alt=""
-          /></a>
-        </div>
-      </section>
-    </footer>
-    <p class="direitos">
-      &copy; Todos os direitos reservados - Farol Pitimbu 2025
-    </p>
-    <script src="../scripts/filtro.js"></script>
-  </body>
+    </section>
+    <section class="redes">
+      <h2 class="redes__titulo">Nossas Redes</h2>
+      <div>
+        <a class="redes__link" target="_blank" href="https://www.instagram.com/farolpitimbupb/"><img
+            class="redes__imagem" src="../assets/Instagram.png" alt="" /></a>
+        <a class="redes__link" target="_blank" href="https://www.tiktok.com/@farolpitimbu?_t=ZM-8wjVecP5xk0&_r=1"><img
+            class="redes__imagem" src="../assets/Tiktok.png" alt="" /></a>
+      </div>
+    </section>
+  </footer>
+  <p class="direitos">
+    &copy; Todos os direitos reservados - Farol Pitimbu 2025
+  </p>
+  <script src="../scripts/filtro.js"></script>
+</body>
+
 </html>

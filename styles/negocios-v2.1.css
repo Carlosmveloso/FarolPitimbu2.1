@@ -173,7 +173,7 @@ main {
 
 .card img {
   width: 125px;
-  max-height: 125px;
+  height: 125px;
   border-radius: 5px;
 }
 
